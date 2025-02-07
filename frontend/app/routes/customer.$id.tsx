@@ -13,7 +13,7 @@ export const loader: LoaderFunction = async ({ params }) => {
   const rand = Math.floor(Math.random() * 1000001);
   const path = `${
     process.env.NODE_ENV === "production"
-      ? "https://northwind-worker.cf-tme.workers.dev"
+      ? "https://northwind-worker.signalnerve.workers.dev"
       : "http://127.0.0.1:8789"
   }/api/customer?Id=${params.id}&rand=${rand}`;
 
